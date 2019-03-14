@@ -3,15 +3,18 @@ import discord
 import asyncio
 import random
 
-TOKEN = ""
-channel_name = "sakura"
+TOKEN = "" # your token
+
+channel_name = "sakura" # default channel name
 
 client= discord.Client()
 
+# AIML startup
 kernel = aiml.Kernel()
 kernel.learn("std-startup.xml")
 kernel.respond("LOAD AIML B")
 
+# on_ready
 @client.event
 async def on_ready():
     print('---------------')
@@ -20,6 +23,7 @@ async def on_ready():
     print(client.user.id)
     print("---------------")
 
+# on_message
 @client.event
 async def on_message(message):
     channel = message.channel
@@ -33,12 +37,13 @@ async def on_message(message):
     if message.content is None:
         return
 
-    if message.content == '/info':
-        msg = "Hey There, I'm a AIML Chatbot made for discord\nBy: Assassin umz#3274"
+    if message.content.lower() == ";info":
+        msg = "Hey There, I'm a AIML Chatbot made for discord\nType `;help` for more info"
         await client.send_message(channel, msg)
 
     else:
         response = kernel.respond(message.content)
+        await client.send_typing(channel)
         await asyncio.sleep(random.randint(0,2))
         await client.send_message(channel, response)
 
