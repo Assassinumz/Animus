@@ -3,7 +3,6 @@ import discord
 import asyncio
 import random
 
-
 #--------------TYPE YOUR TOKEN AND OTHER STUFF BELOW--------------#
 TOKEN = "" # your token
 
@@ -42,11 +41,15 @@ async def on_message(message):
     if message.content is None:
         return
 
-    if message.content.lower() == ";info":
+    if "https://" in message.content.lower() or "www." in message.content.lower():
+        return
+
+    if message.content == "<@547321575993769984>":
         msg = "Hey There, I'm a AIML Chatbot made for discord\nType `;help` for more info"
         await client.send_message(channel, msg)
+        return
 
-    if message.content.lower() == ";help":
+    elif message.content.lower() == ";help":
         embed = discord.Embed(title="Help", description="List of commands", colour=colour)
         embed.add_field(name=";help", value="Shows this help message")
         embed.add_field(name=";info", value="Shows information about the bot")
