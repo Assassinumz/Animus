@@ -6,7 +6,7 @@ import random
 #--------------TYPE YOUR TOKEN AND OTHER STUFF BELOW--------------#
 TOKEN = "" # your token
 
-channel_name = "sakura" # default channel name
+channel_name = "animus" # default channel name
 
 colour = 0xffb7c5 # default colour for embeds
 #-----------------------------------------------------------------#
@@ -45,7 +45,7 @@ async def on_message(message):
         return
 
     if message.content == "<@547321575993769984>":
-        msg = "Hey There, I'm a AIML Chatbot made for discord\nType `;help` for more info"
+        msg = "Hey There, I'm a Animus an AIML Chatbot made for discord\nType `;help` for more info"
         await client.send_message(channel, msg)
         return
 
