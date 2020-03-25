@@ -46,7 +46,7 @@ async def on_message(message):
 
     if message.content == "<@547321575993769984>":
         msg = "Hey There, I'm a Animus an AIML Chatbot made for discord\nType `;help` for more info"
-        await client.send_message(channel, msg)
+        await channel.send(msg)
         return
 
     elif message.content.lower() == ";help":
@@ -54,12 +54,11 @@ async def on_message(message):
         embed.add_field(name=";help", value="Shows this help message")
         embed.add_field(name=";info", value="Shows information about the bot")
         embed.add_field(name=";invite", value="Provides the invite link for the bot and support server")
-        await client.send_message(channel, embed=embed)
+        await channel.send(embed=embed)
         
     else:
         response = kernel.respond(message.content)
-        await client.send_typing(channel)
         await asyncio.sleep(random.randint(0,2))
-        await client.send_message(channel, response)
+        await channel.send(response)
 
 client.run(TOKEN)
