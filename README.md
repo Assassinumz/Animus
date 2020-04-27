@@ -8,9 +8,6 @@ An AIML Chat Bot for Discord made with Python
     <a href="https://discord.gg/3nfQadt">
     <img src="https://img.shields.io/discord/264666918034604032.svg?color=%237289DA&label=Discord&style=popout-square" alt="Discord Server">
     </a>
-    <a href="https://python.org/">
-    <img src="https://img.shields.io/pypi/pyversions/discord.svg?style=popout-square" alt="python">
-    </a>
     <a href="https://github.com/Rapptz/discord.py">
     <img src="https://img.shields.io/pypi/v/discord.svg?color=blue&label=discord.py&style=popout-square" alt="discord.py">
     </a>
