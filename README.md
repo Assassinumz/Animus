@@ -14,34 +14,35 @@ An AIML Chat Bot for Discord made with Python
 </p>
 
 ## Animus Invite link and support server
-* To invite Animus to your server : [Click Here](https://discordapp.com/api/oauth2/authorize?client_id=547321575993769984&permissions=392208&scope=bot)
-* Join the support server for a demo : [Click Here](https://discord.gg/3nfQadt)
+
+- To invite Animus to your server :
+  [Click Here](https://discordapp.com/api/oauth2/authorize?client_id=547321575993769984&permissions=392208&scope=bot)
+- Join the support server for a demo : [Click Here](https://discord.gg/3nfQadt)
 
 ## Instructions to Host your own bot
 
-* you need to create a channel in your server named animus for the bot to work
+- you need to create a channel in your server named animus for the bot to work
 
 ### Create a discord application
 
-* Go to [Discord Application](https://discordapp.com/developers/applications/) and create your application
-* After creating your application go to bot and click on "ADD BOT" 
-* Copy your bot token and paste it in animus.py
-* To add the bot to your server go to OAuth2, select bot in SCOPES and copy the link generated below (you can also add optional permissions)
-* Open the copied link and select your server you want to add the bot in
-
+- Go to [Discord Application](https://discordapp.com/developers/applications/)
+  and create your application
+- After creating your application go to bot and click on "ADD BOT"
+- Copy your bot token and paste it in animus.py
+- To add the bot to your server go to OAuth2, select bot in SCOPES and copy the
+  link generated below (you can also add optional permissions)
+- Open the copied link and select your server you want to add the bot in
 
 ### Setting up the bot
 
-* Clone the repository
-`git clone https://github.com/Assassinumz/Animus.git`
+- Clone the repository `git clone https://github.com/Assassinumz/Animus.git`
 
-* Install the requirements
-`pip install requirements.txt`
+- Install the requirements `pip install requirements.txt`
 
-* Open animus.py in any editor and paste your token in the provided space
+- Open animus.py in any editor and paste your token in the provided space
 
-* Run your bot
-`python animus.py`
+- Run your bot `python animus.py`
 
 ## Contact INFO
+
 If you have any questions ask me on [discord](https://discord.gg/3nfQadt)
